@@ -1,0 +1,153 @@
+html{
+  background-color: #1d1d1d;
+}
+
+.Port-page {
+  background-color: #1d1d1d;
+  font-family: 'Arvo', sans-serif;
+  overflow-x: hidden;
+  padding: 100px 130px;
+}
+
+.title {
+  font-size: 5em;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.Port-home {
+  border: 2px solid white;
+  color: white;
+  position: fixed;
+  padding: 10px;
+  margin: -250px auto auto -85px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.Port-container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Port-container {
+  position: relative;
+  height: auto;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(1, 4fr);
+  gap: 40px;
+}
+
+/* 아이템 스타일 */
+.Port-item {
+  width: 540px;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(48, 47, 47);
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+/* 아이템 이미지 */
+.Port-item img {
+  width: 100%;
+}
+
+/* 아이템 내용 */
+.Port-projCont {
+  margin: 20px;
+  color: rgb(173, 172, 172);
+}
+
+.Port-projTitle {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.Port-projSub {
+  border: 1px solid #1d1d1d;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+/* 더보기 버튼 스타일 */
+.Port-more-btns {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.Port-more-btns a {
+  text-decoration: none;
+}
+
+.Port-more {
+  padding: 5px 15px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.Port-container:hover .Port-item{
+  filter: brightness(0.8) blur(3px);
+}
+
+/* 마우스를 올렸을 때 해당 아이템에만 버튼 보이기 */
+.Port-container:hover .Port-more-btns {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 24인치 모니터 (대체로 화면 가로폭이 1920px 이하) */
+@media (max-width: 1920px) {
+  .Port-page {
+    background-color: #1d1d1d;
+    font-family: 'Arvo', sans-serif;
+    overflow-x: hidden;
+    padding: 100px 100px;
+  }
+
+  .home {
+    left: 20px;
+  }
+
+  .Port-container {
+    gap: 20px; /* 열 간격을 더 크게 설정 */
+  }
+
+  .Port-item {
+    width: 408px; /* 아이템 크기 조정 */
+  }
+}
+
+/* 32인치 모니터 (대체로 화면 가로폭이 2560px 이상) */
+@media (min-width: 2560px) {
+  .Port-container {
+    gap: 50px; /* 열 간격을 더 크게 설정 */
+  }
+
+  .Port-item {
+    width: 535px; /* 아이템 크기 조정 */
+  }
+}
