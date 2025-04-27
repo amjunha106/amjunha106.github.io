@@ -5,7 +5,7 @@ const profileImage = "/assets/images/image1.jpg";
 const htmlImg = "/assets/images/image4.png";
 const cssImg = "/assets/images/image5.png";
 const jsImg = "/assets/images/image6.png";
-const vueImg = "/assets/images/image7.png";
+const reactImg = "/assets/images/image7.png";
 const springbootImg = "/assets/images/image8.png";
 const javaImg = "/assets/images/image9.png";
 const oracleImg = "/assets/images/image10.png";
@@ -39,7 +39,7 @@ const AboutMe = () => {
           { name: "HTML", src: htmlImg },
           { name: "CSS", src: cssImg },
           { name: "JavaScript", src: jsImg },
-          { name: "VUE.JS", src: vueImg },
+          { name: "REACT", src: reactImg },
         ]} />
 
         <Skill title="Back-End" skills={[
