@@ -2,7 +2,7 @@
 <img src="/images/image1.png" alt="Image">
 <br>
 <h1>소개 및 개요</h1>
-URL : https://amjunha106.github.io//<br>
+URL : https://amjunha106.github.io<br>
 프로젝트 기간 : 2025-03-14 ~ 진행중<br>
 인원 : 개인<br>
 주제 : 포트폴리오사이트 만들기<br>
